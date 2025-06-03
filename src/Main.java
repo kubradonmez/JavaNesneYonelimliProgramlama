@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Kübra", 30, "UÜ");
+        Shape shape1 = new Circle();
+        Shape shape2 = new Rectangle();
 
-        s1.displayInfo();  // bilgileri ekrana yazdırır
+        shape1.draw();  // Çember çiziliyor.
+        shape2.draw();  // Dikdörtgen çiziliyor.
     }
 }
