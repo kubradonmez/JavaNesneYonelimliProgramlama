@@ -1,19 +1,32 @@
 public class Car {
-    String brand;
-    String model;
-    int year;
+    private String brand;
+    private String model;
+    private int year;
 
-    //  Constructor (Yapıcı Metot)
-    public Car(String brand, String model, int year) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
+    // Getter - Setter for brand
+    public String getBrand() {
+        return brand;
     }
 
-    //  Bilgileri yazdıran metot
-    public void printInfo() {
-        System.out.println("Marka: " + brand);
-        System.out.println("Model: " + model);
-        System.out.println("Yıl: " + year);
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    // Getter - Setter for model
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    // Getter - Setter for year
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 }
