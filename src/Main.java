@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        Vehicle myVehicle = new Vehicle();
+        myVehicle.start();  // Vehicle sınıfının metodu çalışır
+
         Car myCar = new Car();
-
-        myCar.setSpeed(120);  // speed değerini ata
-
-        System.out.println("Arabanın hızı: " + myCar.getSpeed() + " km/s");
+        myCar.start();      // Car sınıfındaki override edilmiş metod çalışır
     }
 }
